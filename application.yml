@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driverClass: org.postgresql.Driver
+    url: jdbc:postgres://localhost:5432/auth
+    username: postgres
+    password: Independent12#
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+management:
+  endpoint:
+    routes:
+      enabled: true
+    web:
+      exposed:
+        included: *

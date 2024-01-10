@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: driver-location
+  datasource:
+    url: jdbc:postgres://localhost:5432/driverLocation
+    username: postgres
+    password: Independent12#
+
+server:
+  port: 8082
+
+management:
+  endpoint:
+    routes:
+      enabled: true
+    web:
+      exposed:
+        included: *

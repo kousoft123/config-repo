@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/customer
+    username: postgres
+    password: Independent12#
+  application:
+    name: customer
+server:
+  port: 9091
+
+management:
+  endpoint:
+    routes:
+      enabled: true
+    web:
+      exposed:
+        included: *
